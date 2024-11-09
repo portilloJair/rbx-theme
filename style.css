@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "GeistMono";
+    src: url("fonts/GeistMono-Medium.ttf") format("truetype");
+}
+
+body {
+    background-color: #181a1c;
+    color: #fff;
+    font-family: "GeistMono";
+    font-size: smaller;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+    margin-bottom: 5px;
+}
+
+.btnGenerate {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+
+    button {
+        width: 50%;
+        font-size: x-large;
+    }
+}
+
+.btnBackPage {
+    width: 100%;
+    text-align: left;
+    padding-top: 1rem;
+
+    button {
+        width: 15%;
+        font-size: x-large;
+    }
+}
+
+#textMessage {
+    width: 100%;
+    text-align: center;
+    color: #adf195;
+    display: none;
+}
+
+.example {
+    background-color: #252525;
+    height: 250px;
+}
+
+.spacing {
+    margin-left: 3rem;
+}
+
+.spacing-2 {
+    margin-left: 3rem;
+}
+
+.localColor {
+    color: #f86d7c;
+}
+
+.textColor {
+    color: #cccccc;
+}
+
+.operatorColor {
+    color: #cccccc;
+}
+
+.stringColor {
+    color: #adf195;
+}
+
+.numberColor {
+    color: #ffc600;
+}
+
+.boolColor {
+    color: #ffc600;
+}
+
+.functionColor {
+    color: #f86d7c;
+}
+
+.functionNameColor {
+    color: #fdfbac;
+}
+
+.builtFunctionColor {
+    color: #84d6f7;
+}
+
+.keywordColor {
+    color: #f86d7c;
+}
+
+.selfColor {
+    color: #f86d7c;
+}
+
+.localPropertyColor {
+    color: #61a1f1;
+}
+
+.localMethodColor {
+    color: #fdfbac;
+}
+
+.commentColor {
+    color: #666666;
+}
+
+.nilColor {
+    color: #ffc600;
+}
