@@ -160,9 +160,29 @@ function generate() {
 
     document.getElementById("textMessage").style.display = "block";
     canGenerate = false;
+    const json = {
+        "Text Color": $textColor.value,
+        "Operator Color": $operatorColor.value,
+        "Number Color": $numberColor.value,
+        "String Color": $stringColor.value,
+        "Comment Color": $commentColor.value,
+        "Keyword Color": $keywordColor.value,
+        "Built-in Function Color": $builtFunctionColor.value,
+        "Method Color": $localMethodColor.value,
+        "Property Color": $localPropertyColor.value,
+        '"nil" Color': $nilColor.value,
+        "Bool Color": $boolColor.value,
+        '"function" Color': $functionColor.value,
+        '"local" Color': $localColor.value,
+        '"self" Color': $selfColor.value,
+        "Function Name Color": $functionNameColor.value,
+        "Background Color": $backgroundColor.value,
+        "Bracket Color": $operatorColor.value,
+    };
 
+    console.log(json);
     // Copy the text inside the text field
-    navigator.clipboard.writeText("ERES UN TILIN");
+    navigator.clipboard.writeText(JSON.stringify(json));
 
     setTimeout(() => {
         document.getElementById("textMessage").style.display = "none";
